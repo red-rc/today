@@ -171,11 +171,12 @@ var how = [
     "схоже на",
     "котиться на",
     "іде в",
+    "любе нюхати"
 ];
 
 document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${["Твоє", names[Math.floor(Math.random() * 76)], how[Math.floor(Math.random() * 5)], howwhat[Math.floor(Math.random() * 75)] + "!!!"].join(" ")}</p>`;
+    out += `<p class="alertName" role="alert">${["Твоє", names[Math.floor(Math.random() * 76)], how[Math.floor(Math.random() * 6)], howwhat[Math.floor(Math.random() * 75)] + "!!!"].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

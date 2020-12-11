@@ -1,26 +1,183 @@
-var calling = [
-    "Helen you are bitch", 
-    "Yeees, YOU are bitch", 
-    "You how sand!", 
-    "Beach", 
-    "Hey Hilan!", 
-    "You are the bitch, like peace of sand in anakin's shoes", 
-    "Bye bitch!",
-    "I hate you in all realities!",
-    "I think Dragon egg is game of shit",
-    "But Dragon egg have tasty egg",
-    "Dragon shit",
-    "Anakin don't play in dragon",
-    "Star Wars better Dragon age",
-    "Dragon socks be shit!",
-    "I am KENOBIII! Hello there!",
-    "Game of year is Minecraft, game bad of all is Egg of dragon sock",
-    "Ольэна ти гімно"
-];
+/*var secondsInAMinute = 60;
+var minutesInAnHour = secondsInAMinute * 60;
+var hoursInADay = minutesInAnHour * 24;
+var daysInAYear = hoursInADay * 365;
+var age = daysInAYear * 11;
+console.log(age);
 
-document.getElementById('button').onclick = function() {   
+var balloons = 100;
+balloons /= 4;
+console.log(balloons);
+
+var string = "hElLo tHerE, I aM kEnObi!";
+string[0].toUpperCase() + string.slice(1).toLowerCase();
+console.log(string);
+*/
+var names = [
+    "гімно",
+    "обличчя",
+    "волосся",
+    "абеткування",
+    "авансування",
+    "авіабудування",
+    "автозбереження",
+    "агрегатування",
+    "баговиння",
+    "бажання",
+    "базарування",
+    "базграння",
+    "батіковання",
+    "буркотіння",
+    "бурмило",
+    "бурякозбирання",
+    "бухкання",
+    "бюджетування",
+    "кишло",
+    "кібченя",
+    "ківі",
+    "кілечко",
+    "кільце",
+    "кімоно",
+    "кіно",
+    "клоччя",
+    "ковзання",
+    "ковтання",
+    "козакування",
+    "козеня",
+    "козенятко",
+    "копіювання",
+    "кормило",
+    "кормління",
+    "кормовиробництво",
+    "королівство",
+    "королювання",
+    "коронування",
+    "корсарство",
+    "котирування",
+    "крабеня",
+    "крайнебо",
+    "криженя",
+    "левеня",
+    "лесирування",
+    "лимарство",
+    "ловецтво",
+    "логарифміка",
+    "логарифмування",
+    "ложкарство",
+    "лозоплетіння",
+    "лозоходіння",
+    "лозоходство",
+    "м'якосердя",
+    "м'яло",
+    "маковинє",
+    "метазнання",
+    "Монако",
+    "населення",
+    "начало",
+    "непорозуміння",
+    "нишпорення",
+    "нововведення",
+    "нововірство",
+    "новоріччя",
+    "новосілля",
+    "обезліснення",
+    "оглядання",
+    "оголеність",
+    "оголення",
+    "огруддя",
+    "оживляння",
+    "озброєння"
+];
+var howwhat = [
+    "фасоль",
+    "реальне гімно",
+    "пріщі",
+    "абсентеїзм",
+    "абсорбер",
+    "абутилон",
+    "автомобілізм",
+    "автошлях",
+    "атеїст",
+    "атеросклероз",
+    "атол",
+    "ахроматизм",
+    "ацетон",
+    "багат-вечір",
+    "баласт",
+    "балдахін",
+    "баняк",
+    "баркас",
+    "ват",
+    "ваторник",
+    "ватрак",
+    "ввід-вивід",
+    "ведаїзм",
+    "вечір-спектакль",
+    "виставка-ярмарок",
+    "віадук",
+    "відеокліп",
+    "відеофільм",
+    "військовослужбовець",
+    "Всевишній",
+    "газ",
+    "гарсон",
+    "гелій",
+    "герць",
+    "гіперпуризм",
+    "гіпонім",
+    "Гондурас",
+    "горнець",
+    "грот",
+    "ґвинт",
+    "ґелюх",
+    "двір",
+    "дев'ятерик",
+    "дезодорант-спрей",
+    "демаркетинг",
+    "деплазмоліз",
+    "депутат-сумісник",
+    "диван",
+    "диплом",
+    "експерт-викладач",
+    "елемент",
+    "елітаризм",
+    "ерг",
+    "ефект",
+    "жеребець",
+    "жироустійник",
+    "жолудь",
+    "замірник-монтажник",
+    "зеніт",
+    "зір",
+    "золь-гель",
+    "ієрей",
+    "інженер-землевпорядник",
+    "інфант",
+    "їдець",
+    "їдок",
+    "їжачник",
+    "к'ят",
+    "кабанище",
+    "кабанча",
+    "кабачок",
+    "каберне",
+    "каботаж",
+    "кабошон",
+    "кабріолет"
+];
+var how = [
+    "як",
+    "наче",
+    "схоже на"
+];
+var namesUpd = names[Math.floor(Math.random() * 76)];
+var howwhatUpd = howwhat[Math.floor(Math.random() * 75)];
+var howUpd = how[Math.floor(Math.random() * 3)];
+var all = ["Твоє", namesUpd, howUpd, howwhatUpd + "!!!"].join(" ");
+
+document.getElementById('button').onclick = function() { 
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${calling[Math.floor(Math.random() * 17)]}</p>`;
+    out += `<p class="alertName" role="alert">${all}</p>`;
     callingField.innerHTML = out;
 }

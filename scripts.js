@@ -174,14 +174,10 @@ var how = [
     "какає на",
     "любе їсти"
 ];
-var namesUpd = names[Math.floor(Math.random() * 76)];
-var howwhatUpd = howwhat[Math.floor(Math.random() * 75)];
-var howUpd = how[Math.floor(Math.random() * 7)];
-var all = ["Твоє", namesUpd, howUpd, howwhatUpd + "!!!"].join(" ");
 
-document.getElementById('button').onclick = function() { 
+document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${all}</p>`;
+    out += `<p class="alertName" role="alert">${["Твоє", names[Math.floor(Math.random() * 76)], how[Math.floor(Math.random() * 7)], howwhat[Math.floor(Math.random() * 75)] + "!!!"].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

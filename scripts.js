@@ -68,7 +68,7 @@ var names = [
     "лозоходіння",
     "лозоходство",
     "м'якосердя",
-    "м'яло",
+    "м'яcо",
     "маковинє",
     "метазнання",
     "Монако",
@@ -168,11 +168,15 @@ var howwhat = [
 var how = [
     "як",
     "наче",
-    "схоже на"
+    "схоже на",
+    "котиться на",
+    "іде в",
+    "п'є пиво поруч з",
+    "любе їсти"
 ];
 var namesUpd = names[Math.floor(Math.random() * 76)];
 var howwhatUpd = howwhat[Math.floor(Math.random() * 75)];
-var howUpd = how[Math.floor(Math.random() * 3)];
+var howUpd = how[Math.floor(Math.random() * 7)];
 var all = ["Твоє", namesUpd, howUpd, howwhatUpd + "!!!"].join(" ");
 
 document.getElementById('button').onclick = function() { 

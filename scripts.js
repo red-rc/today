@@ -1,20 +1,5 @@
-/*var secondsInAMinute = 60;
-var minutesInAnHour = secondsInAMinute * 60;
-var hoursInADay = minutesInAnHour * 24;
-var daysInAYear = hoursInADay * 365;
-var age = daysInAYear * 11;
-console.log(age);
-
-var balloons = 100;
-balloons /= 4;
-console.log(balloons);
-
-var string = "hElLo tHerE, I aM kEnObi!";
-string[0].toUpperCase() + string.slice(1).toLowerCase();
-console.log(string);
-*/
 var names = [
-"shit",
+    "shit",
     "face",
     "hair",
     "kiwi",
@@ -25,77 +10,47 @@ var names = [
     "coronation",
     "crab",
     "lion cup",
-    "hunting",
-    "logarithmics",
-    "logarithm",
     "vine",
     "meat",
     "poppy",
-    "population",
     "start",
-    "innovation",
-    "infidelity",
     "New Year",
-    "review",
-    "bust",
-    "revival",
-    "armament"
+    "destiny"
 ];
 var howwhat = [
-"beans",
     "real shit",
     "meat",
     "pimples",
-    "absenteeism",
-    "motoring",
-    "highway",
-    "atheist",
-    "atoll",
-    "achromatism",
+    "atheist beach",
     "acetone",
-    "DON'T rich evening",
-    "ballast",
-    "launch",
     "watt",
     "Vedism",
-    "video clip",
-    "video",
     "gas",
-    "waiter",
-    "helium",
-    "hyperpurism",
-    "hyponym",
     "Honduras",
-    "pot",
-    "grotto",
-    "screw",
     "deputy",
     "sofa",
     "diploma",
     "expert teacher",
-    "element of shit",
-    "elitism",
+    "dog",
     "fat resistant",
     "acorn",
-    "zenith",
-    "vision",
-    "sol-gel",
     "priest",
-    "infante",
-    "eater",
     "cat",
     "boar",
-    "cabriolet"
+    "pig",
+    "K-pop",
+    "KENOBIII"
 ];
 var how = [
     "as",
     "like",
     "looks like",
+    "same as"
 ];
 
 document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 26)], how[Math.floor(Math.random() * 3)], howwhat[Math.floor(Math.random() * 44)] + "!!!"].join(" ")}</p>`;
+    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 4)], howwhat[Math.floor(Math.random() * 22)] + "!!!"].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

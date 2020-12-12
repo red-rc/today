@@ -8,8 +8,8 @@ var names = [
     "kid",
     "kingdom",
     "coronation",
-    "crab",
-    "lion cup",
+    "cup",
+    "beach",
     "vine",
     "meat",
     "poppy",
@@ -27,13 +27,13 @@ var howwhat = [
     "Vedism",
     "gas",
     "Honduras",
-    "deputy",
-    "sofa",
-    "diploma",
-    "expert teacher",
+    "in deputy",
+    "peace of piss",
+    "in president",
+    "start of business",
     "dog",
     "fat resistant",
-    "acorn",
+    "Lenin",
     "priest",
     "cat",
     "boar",
@@ -42,15 +42,26 @@ var howwhat = [
     "KENOBIII"
 ];
 var how = [
-    "as",
     "like",
     "looks like",
     "same as"
+];
+var procent = [
+    "Yes, 10% similarity",
+    "Yes, 20% similarity",
+    "Yes, 30% similarity",
+    "Yes, 40% similarity",
+    "Yes, 50% similarity",
+    "Yes, 60% similarity",
+    "Yes, 70% similarity",
+    "Yes, 80% similarity",
+    "Yes, 90% similarity",
+    "Yes, 100% similarity",
 ];
 
 document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 4)], howwhat[Math.floor(Math.random() * 22)] + "!!!"].join(" ")}</p>`;
+    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 3)], howwhat[Math.floor(Math.random() * 22)] + ".", procent[Math.floor(Math.random() * 10)]].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

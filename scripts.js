@@ -1,4 +1,4 @@
-var names = [
+var something = [
     "shit",
     "face",
     "hair",
@@ -12,25 +12,34 @@ var names = [
     "beach",
     "vine",
     "meat",
-    "poppy",
-    "start",
+    "legs",
+    "hands",
     "New Year",
     "destiny"
 ];
-var howwhat = [
+
+var lliw = [
+    "like",
+    "looks like",
+    "is same as",
+    "was same as",
+    "is"
+];
+
+var like = [
     "real shit",
     "meat",
     "pimples",
     "atheism",
-    "acetone",
-    "watt",
+    "of acetone",
+    "220 volts",
     "Vedism",
     "gas",
-    "Honduras",
+    "in Honduras",
     "deputy's",
     "peace of piss",
     "president's",
-    "start of business",
+    "Trump",
     "dog",
     "fat resistant",
     "Lenin",
@@ -39,25 +48,16 @@ var howwhat = [
     "boar",
     "pig",
     "K-pop",
-    "KENOBIII"
-];
-var how = [
-    "like",
-    "looks like",
-    "is same as",
-    "was same as"
-];
-var procent = [
-    "70% similarity",
-    "80% similarity",
-    "90% similarity",
-    "100% similarity",
-    "100.1% similarity"
+    "KENOBIII's",
+    "Jesus"
 ];
 
 document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 4)], howwhat[Math.floor(Math.random() * 22)] + ".", procent[Math.floor(Math.random() * 5)]].join(" ")}</p>`;
+    out += `<p class="alertName" role="alert">${
+    ["Your", something[Math.floor(Math.random() * 17)],
+    lliw[Math.floor(Math.random() * 5)], 
+    like[Math.floor(Math.random() * 23)] + "!"].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

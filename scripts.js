@@ -21,7 +21,7 @@ var howwhat = [
     "real shit",
     "meat",
     "pimples",
-    "atheist beach",
+    "atheism",
     "acetone",
     "watt",
     "Vedism",
@@ -47,21 +47,16 @@ var how = [
     "same as"
 ];
 var procent = [
-    "10% similarity",
-    "20% similarity",
-    "30% similarity",
-    "40% similarity",
-    "50% similarity",
-    "60% similarity",
     "70% similarity",
     "80% similarity",
     "90% similarity",
     "100% similarity",
+    "100.1% similarity"
 ];
 
 document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 3)], howwhat[Math.floor(Math.random() * 22)] + ".", procent[Math.floor(Math.random() * 10)]].join(" ")}</p>`;
+    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 3)], howwhat[Math.floor(Math.random() * 22)] + ".", procent[Math.floor(Math.random() * 5)]].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

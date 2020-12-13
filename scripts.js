@@ -27,9 +27,9 @@ var howwhat = [
     "Vedism",
     "gas",
     "Honduras",
-    "in deputy",
+    "deputy's",
     "peace of piss",
-    "in president",
+    "president's",
     "start of business",
     "dog",
     "fat resistant",
@@ -44,7 +44,8 @@ var howwhat = [
 var how = [
     "like",
     "looks like",
-    "same as"
+    "is same as",
+    "was same as"
 ];
 var procent = [
     "70% similarity",
@@ -57,6 +58,6 @@ var procent = [
 document.getElementById('button').onclick = function() {
     let callingField = document.getElementById('calling-field');
     let out = '';
-    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 3)], howwhat[Math.floor(Math.random() * 22)] + ".", procent[Math.floor(Math.random() * 5)]].join(" ")}</p>`;
+    out += `<p class="alertName" role="alert">${["Your", names[Math.floor(Math.random() * 17)], how[Math.floor(Math.random() * 4)], howwhat[Math.floor(Math.random() * 22)] + ".", procent[Math.floor(Math.random() * 5)]].join(" ")}</p>`;
     callingField.innerHTML = out;
 }

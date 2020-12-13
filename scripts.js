@@ -47,16 +47,16 @@ var how = [
     "same as"
 ];
 var procent = [
-    "Yes, 10% similarity",
-    "Yes, 20% similarity",
-    "Yes, 30% similarity",
-    "Yes, 40% similarity",
-    "Yes, 50% similarity",
-    "Yes, 60% similarity",
-    "Yes, 70% similarity",
-    "Yes, 80% similarity",
-    "Yes, 90% similarity",
-    "Yes, 100% similarity",
+    "10% similarity",
+    "20% similarity",
+    "30% similarity",
+    "40% similarity",
+    "50% similarity",
+    "60% similarity",
+    "70% similarity",
+    "80% similarity",
+    "90% similarity",
+    "100% similarity",
 ];
 
 document.getElementById('button').onclick = function() {

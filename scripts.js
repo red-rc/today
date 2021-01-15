@@ -32,7 +32,7 @@ var like = [
     "pimples",
     "atheism",
     "acetone",
-    "220 volts",
+    "The Spirit of Conflict (does not exist)",
     "Vedism",
     "gas",
     "in Honduras",

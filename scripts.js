@@ -22,7 +22,7 @@ var lliw = [
     "like",
     "looks like",
     "is same as",
-    "was same as",
+    "was a",
     "is"
 ];
 
@@ -31,7 +31,7 @@ var like = [
     "meat",
     "pimples",
     "atheism",
-    "of acetone",
+    "acetone",
     "220 volts",
     "Vedism",
     "gas",
@@ -49,7 +49,9 @@ var like = [
     "pig",
     "K-pop",
     "KENOBIII's",
-    "Jesus"
+    "Jesus",
+    "Hitler",
+    "COVID-19"
 ];
 
 document.getElementById('button').onclick = function() {
@@ -58,6 +60,6 @@ document.getElementById('button').onclick = function() {
     out += `<p class="alertName" role="alert">${
     ["Your", something[Math.floor(Math.random() * 17)],
     lliw[Math.floor(Math.random() * 5)], 
-    like[Math.floor(Math.random() * 23)] + "!"].join(" ")}</p>`;
+    like[Math.floor(Math.random() * 25)] + "!"].join(" ")}</p>`;
     callingField.innerHTML = out;
 }
